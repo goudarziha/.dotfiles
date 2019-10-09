@@ -1,0 +1,28 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_vimrc:
+    src: vimrc
+    dst: ~/.vimrc
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_tmux.conf:
+    src: tmux.conf
+    dst: ~/.tmux.conf
+profiles:
+  zips:
+    dotfiles:
+    - f_vimrc
+    - d_kitty
+    - d_i3
+    - f_zshrc
+    - f_tmux.conf
